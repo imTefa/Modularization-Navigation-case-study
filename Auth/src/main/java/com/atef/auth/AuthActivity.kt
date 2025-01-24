@@ -29,6 +29,7 @@ class AuthActivity : ComponentActivity() {
                         )
                         Button(onClick = {
                             HomeNavigation.getInstance().openHome(this@AuthActivity)
+                            finish()
                         }) {
                             Text("Open home")
                         }
